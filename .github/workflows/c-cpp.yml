@@ -14,7 +14,7 @@ jobs:
     - name: Install dependencies
       run: sudo apt-get update && sudo apt-get install -y cmake g++ gcc
     - name: Configure
-      run: cmake -B build -S .
+      run: cmake -B build -S CGPA.calc
     - name: Build
       run: cmake --build build
     - name: Test
