@@ -13,8 +13,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: Install dependencies
       run: sudo apt-get update && sudo apt-get install -y cmake g++ gcc
-    - name: Configure
-      run: cmake -B build -S CGPA calculator.cpp
+    - name: Configure CMake
+  run: cmake .
     - name: Build
       run: cmake --build build
     - name: Test
